@@ -1,6 +1,6 @@
 # GifTastic
 
-Giphy API and javaScript/jQuery
+Giphy API and javaScript / jQuery
 
 ## Requirements
 
@@ -8,9 +8,9 @@ Giphy API and javaScript/jQuery
 
 - Create a set of gif images and ratings when a particular button is clicked
 
-- Allow user to create new fuctioning button on text input
+- Allow user to create new functioning button on text input
 
-- launch gif's as still then allow gif animation upon image click
+- launch gif images as still then allow gif animation upon image click
 
 ## Technologies 
 
@@ -32,14 +32,14 @@ Giphy API and javaScript/jQuery
 
 ## More Info
 
-- Layout and background styling was programed with HTML5, CSS3, Bootstrap4 and Google Fonts
+- Application layout and styling was programed with HTML5, CSS3, Bootstrap4 and Google Fonts
 
-- Buttons animals array and add button by user text input also with the gif still at initialization and animation display when clicked  was programmed with jQuery
+- Buttons, animals array and the add new button by user text input, also with the gif still at initialization and animation display when clicked  was programmed with jQuery
 
-- Gif image display and it's rating on click button was generated with AJAX call using a queryURL Giphy API key and the right perameters to GET appropriate response   
+- Gif image display and it's rating on click button was generated with AJAX call using a queryURL with Giphy API key and the right perameters to GET the appropriate response 
 
 ## Note
 
-- Gif images Spin/Rotate animation on initail animal button click and app mobile responsiveness was intiated with CSS3
+- Gif images Spin/Rotate animation on initial animal button click and app mobile responsiveness was intiated with CSS3
 
 - Alert pop up response when user click Submit button on a blank text input was initiated with javaScript
