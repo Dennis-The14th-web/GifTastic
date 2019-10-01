@@ -36,7 +36,7 @@ Giphy API and javaScript/jQuery
 
 - Buttons animals array and add button by user text input also with the gif still at initialization and animation display when clicked  was programmed with jQuery
 
-- Gif image display and it's rating on click button was generated with AJAX call using a queryURL + Giphy API key and the right perameters to GET appropriate response   
+- Gif image display and it's rating on click button was generated with AJAX call using a queryURL Giphy API key and the right perameters to GET appropriate response   
 
 ## Note
 
