@@ -93,7 +93,7 @@ $(document).ready(function() {
               animals.push(animalPlace);
               $('#animal-input').val("");
               renderButtons();
-            //   return false;
+             return false;
               }
 
           });
