@@ -1,7 +1,7 @@
 //Create an array of Animals=Topics	
 $(document).ready(function() {
 
-    var animals = ["dog", "cat", "bird", "frog", "goldfish", "badger", "bear", "sloth", "bat", "camel", "bee", "crocodile", "gorilla", "lion", "tiger", "monkey", "kangaroo", "geese", "dolphin", "zebra", "whale", "weasel", "swan", "squirrel"];	
+    var animals = ["dog", "cat", "frog", "badger", "sloth", "bat", "bee", "crocodile", "gorilla", "lion", "tiger", "monkey", "kangaroo", "geese", "dolphin", "zebra", "whale", "weasel", "swan", "squirrel"];	
   
     //  create animal array buttons
     function renderButtons(){
