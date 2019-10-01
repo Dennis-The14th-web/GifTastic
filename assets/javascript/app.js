@@ -1,15 +1,15 @@
-//Initial array of movies	
+//Create an array of Animals=Topics	
 $(document).ready(function() {
 
-    var animals = ["dog", "cat", "bird", "frog", "goldfish", "badger", "bear", "sloth", "bat", "camel", "bee", "crocodile", "gorilla", "lion", "tiger", "monkey", "kangaroo", "geese", "oxen", "zebra", "whale", "weasel", "swan", "squirrel"];	
+    var animals = ["dog", "cat", "bird", "frog", "goldfish", "badger", "bear", "sloth", "bat", "camel", "bee", "crocodile", "gorilla", "lion", "tiger", "monkey", "kangaroo", "geese", "dolphin", "zebra", "whale", "weasel", "swan", "squirrel"];	
   
-    //  create topics array buttons
+    //  create animal array buttons
     function renderButtons(){
       $('#animal-buttons').empty();
      
   
       for (var i = 0; i < animals.length; i++) {
-              //create all buttons
+              //create all buttons and style apperance in bootstrap class
               var a = $('<button class= "btn btn-primary btn m-1">');
               a.addClass('animal');
               a.attr('data-name', animals[i]);
@@ -19,17 +19,17 @@ $(document).ready(function() {
           }    
           renderButtons();
   
-  //on button click
+  //create an event when button is clicked 
   $(document).on('click', '.animal', function() {
   
       //new variable will log the text data from each button
       var animal = $(this).html(); 
       // console.log(animal);
-  
+
+     // Create an AJAX call for the specific animal button being clicked
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=12QiWZ7afZ51SrEggGq3YFKQZELe8Qbd&limit=10";
       // console.log(queryURL);
   
-      // Creating an AJAX call for the specific animal button being clicked
       $.ajax({
         url: queryURL,
         method: "GET"
@@ -37,29 +37,37 @@ $(document).ready(function() {
   
         var results = response.data;
           //console.log(results);
-          //empties the div before adding more gifs
+
+          //This will empty the div before adding more gifs
          $('#animals').empty();
+
+        //Create individual gif with it's ratings to display in div  
+         var resultsContainerSection = $("<section class='flex-container'>");
+
           for ( var q = 0; q < results.length; q++) {
-                      var imageDiv = $('<div>');
-                      var imageView = results[q].images.fixed_height.url;
-                      var still = results[q].images.fixed_height_still.url;
-                          // console.log(imageView);  
+                      var singleImageDiv = $('<div class="result-container">'); 
+                          var rating = results[q].rating;
+                          var displayRated = $('<p>').text("Rating: " + rating);
   
-          var gifImage = $('<img>').attr("src", still).attr('data-animate', imageView).attr('data-still', still);
-                      gifImage.attr('data-state', 'still');
-                      $('#animals').prepend(gifImage);
-                      gifImage.on('click', playGif);
+        //Create variable that holds the animation display of gifs 
+        var playImg = $("<img class='result'>");
+        playImg.attr("src", results[q].images.fixed_height_still.url);
+        playImg.attr("data-state", "still");
+        playImg.attr("data-still", results[q].images.fixed_height_still.url);
+        playImg.attr("data-animate", results[q].images.fixed_height.url);
   
-          // Pulling ratings for each movie
-          var rating = results[q].rating;
+          //Add ratings before each gif
+        singleImageDiv.prepend(playImg); 
+        singleImageDiv.prepend(displayRated); 
               // console.log(rating);
-          var displayRated= $('<p>').text("Rating: " + rating);
-          $('#animals').prepend(displayRated);
+         resultsContainerSection.prepend(singleImageDiv);
+        $("#animals").prepend(resultsContainerSection);
+        playImg.on('click', playGif);
     } 
   
   }); 
   
-          //function to stop and animate gifs
+          //Create a function to stop and animate gifs
           function playGif() { 
                       var state = $(this).attr('data-state');
                       // console.log(state);
@@ -75,10 +83,10 @@ $(document).ready(function() {
   
         }); 
   
-            //adding new button to array
+            //Create function to add new button to array
           $(document).on('click', '.add-animal', function(){
               if ($('#animal-input').val().trim() == ''){
-                alert('Type in the name of an animal, and click on the SUBMIT button');
+                alert('Type in the name of an animal, and click on the SUBMIT button to see gif display');
              }
              else {
               var animalPlace = $('#animal-input').val().trim();
