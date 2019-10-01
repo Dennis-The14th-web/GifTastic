@@ -189,6 +189,11 @@ b{
         text-align: center;
         color: rgb(166, 255, 0);   
     }
+
+     
+    h2{
+        font-size: 17px;
+    }
     
     b{
         font-family: 'Montserrat Subrayada', sans-serif;
@@ -282,6 +287,11 @@ b{
         color: rgb(166, 255, 0);   
     }
     
+     
+    h2{
+        font-size: 30px;
+    }
+
     b{
         font-family: 'Montserrat Subrayada', sans-serif;
         /* font-style: italic; */
@@ -372,7 +382,11 @@ b{
         text-align: center;
         color: rgb(166, 255, 0);   
     }
-    
+
+    h2{
+        font-size: 35px;
+    }
+
     b{
         font-family: 'Montserrat Subrayada', sans-serif;
         /* font-style: italic; */
