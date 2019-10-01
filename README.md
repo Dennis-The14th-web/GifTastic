@@ -40,6 +40,6 @@ Giphy API and javaScript / jQuery
 
 ## Note
 
-- Gif images Spin/Rotate animation on initial animal button click and app mobile responsiveness was intiated with CSS3
+- Gif images Spin/Rotate animation on initial animal button click and mobile application responsiveness was intiated with CSS3
 
 - Alert pop up response when user click Submit button on a blank text input was initiated with javaScript
