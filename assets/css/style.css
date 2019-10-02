@@ -20,6 +20,10 @@ h2{
     font-size: 30px;
 }
 
+p{
+    margin-bottom: 15px;
+}
+
 b{
     font-family: 'Montserrat Subrayada', sans-serif;
     text-decoration-line: underline;
@@ -39,6 +43,7 @@ b{
     flex-wrap: wrap;
     color: rgb(166, 255, 0);
     font-size: 15px;
+    padding: 20px;
     
 }
 
@@ -55,6 +60,13 @@ b{
     margin-bottom: 20px;
     border: none;
     border-radius: 10px;
+}
+
+#animal-input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 .btn-primary{

@@ -36,7 +36,7 @@ $(document).ready(function() {
       }).done(function(response) {
   
         var results = response.data;
-          //console.log(results);
+          // console.log(results);
 
         //   //This will empty the div before adding more gifs
         //  $('#animals').empty();
@@ -51,10 +51,10 @@ $(document).ready(function() {
   
         //Create variable that holds the animation display of gifs 
         var playImg = $("<img class='result'>");
-        playImg.attr("src", results[i].images.fixed_height_still.url);
+        playImg.attr("src", results[i].images.fixed_width_still.url);
         playImg.attr("data-state", "still");
-        playImg.attr("data-still", results[i].images.fixed_height_still.url);
-        playImg.attr("data-animate", results[i].images.fixed_height.url);
+        playImg.attr("data-still", results[i].images.fixed_width_still.url);
+        playImg.attr("data-animate", results[i].images.fixed_width.url);
   
           //Add ratings before each gif
         singleImageDiv.prepend(playImg); 
