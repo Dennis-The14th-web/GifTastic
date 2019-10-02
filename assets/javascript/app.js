@@ -38,23 +38,23 @@ $(document).ready(function() {
         var results = response.data;
           //console.log(results);
 
-          //This will empty the div before adding more gifs
-         $('#animals').empty();
+        //   //This will empty the div before adding more gifs
+        //  $('#animals').empty();
 
         //Create individual gif with it's ratings to display in div  
          var resultsContainerSection = $("<section class='flex-container'>");
 
-          for ( var q = 0; q < results.length; q++) {
+          for ( var i = 0; i < results.length; i++) {
                       var singleImageDiv = $('<div class="result-container">'); 
-                          var rating = results[q].rating;
+                          var rating = results[i].rating;
                           var displayRated = $('<p>').text("Rating: " + rating);
   
         //Create variable that holds the animation display of gifs 
         var playImg = $("<img class='result'>");
-        playImg.attr("src", results[q].images.fixed_height_still.url);
+        playImg.attr("src", results[i].images.fixed_height_still.url);
         playImg.attr("data-state", "still");
-        playImg.attr("data-still", results[q].images.fixed_height_still.url);
-        playImg.attr("data-animate", results[q].images.fixed_height.url);
+        playImg.attr("data-still", results[i].images.fixed_height_still.url);
+        playImg.attr("data-animate", results[i].images.fixed_height.url);
   
           //Add ratings before each gif
         singleImageDiv.prepend(playImg); 
@@ -91,7 +91,7 @@ $(document).ready(function() {
              else {
               var animalPlace = $('#animal-input').val().trim();
               animals.push(animalPlace);
-              $('#animal-input').val("");
+              $('#animal-input').val();
               renderButtons();
              return false;
               }

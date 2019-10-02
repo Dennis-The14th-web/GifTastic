@@ -34,12 +34,15 @@ Giphy API and javaScript / jQuery
 
 - Application layout and styling was programed with HTML5, CSS3, Bootstrap4 and Google Fonts
 
-- Buttons, animals array and the add new button by user text input, also with the gif still at initialization and animation display when clicked  was programmed with jQuery
+- jQuery was used to program:
 
-- Gif image display and it's rating on click button was generated with AJAX call using a queryURL with Giphy API key and the right perameters to GET the appropriate response 
+    * the buttons of animals array and of the user text input
+    * the gif image still and animation display when clicked
+
+- The gif image display and its ratings were generated with AJAX call using a queryURL, along with a Giphy API key. The right perameters were used to GET the appropriate response when clicked
 
 ## Note
 
-- Gif images Spin/Rotate animation on initial animal button click and mobile application responsiveness was intiated with CSS3
+- Gif images (Spin/Rotate) animation and mobile application responsiveness was intiated with CSS3
 
 - Alert pop up response when user click Submit button on a blank text input was initiated with javaScript
