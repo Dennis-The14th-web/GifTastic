@@ -37,6 +37,6 @@ Giphy API and javaScript / jQuery
 
 - Alert pop up response when user click Submit button on a blank text input was initiated with javaScript
 
-## App View
+## App View & Live Link
 
 <a href="https://dennis-the14th-web.github.io/GifTastic/"><img src="assets/css/images/giftastic.PNG" ></a>
