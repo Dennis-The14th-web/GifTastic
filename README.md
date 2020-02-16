@@ -49,4 +49,4 @@ Giphy API and javaScript / jQuery
 
 ## App View
 
-<a href="https://dennis-the14th-web.github.io/GifTastic/"><img src="images/giftastic.PNG" ></a>
+<a href="https://dennis-the14th-web.github.io/GifTastic/"><img src="assets/css/images/giftastic.PNG" ></a>
