@@ -2,16 +2,6 @@
 
 Giphy API and javaScript / jQuery
 
-## Requirements
-
-- Create an array of related strings as buttons 
-
-- Create a set of gif images and ratings when a particular button is clicked
-
-- Allow user to create new functioning button on text input
-
-- launch gif images as still then allow gif animation upon image click
-
 ## Technologies 
 
 - Giphy API
