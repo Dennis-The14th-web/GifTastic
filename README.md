@@ -46,3 +46,7 @@ Giphy API and javaScript / jQuery
 - Gif images (Spin/Rotate) animation and mobile application responsiveness was intiated with CSS3
 
 - Alert pop up response when user click Submit button on a blank text input was initiated with javaScript
+
+## App View
+
+<a href="https://dennis-the14th-web.github.io/GifTastic/"><img src="images/giftastic.PNG" ></a>
