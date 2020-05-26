@@ -1,3 +1,3 @@
 exports.keys = {
-    apiKey: process.env.api_key
+    apiKey: process.env.API_KEY
 };

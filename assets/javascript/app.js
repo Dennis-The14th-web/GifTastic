@@ -1,4 +1,5 @@
-var queryURL = import("./keys")
+// var queryURL = import("./keys");
+
 
 //Create an array of Animals=Topics	
 $(document).ready(function() {
@@ -29,9 +30,10 @@ $(document).on('click', '.animal', function() {
     // console.log(animal);
 
    // Create an AJAX call for the specific animal button being clicked
-    var queryURL = `https://api.giphy.com/v1/gifs/search?q=` + animal + `&api_key=${process.env.api_key}&limit=10`;
+   
+    var queryURL = `https://api.giphy.com/v1/gifs/search?q=` + animal + `&api_key=12QiWZ7afZ51SrEggGq3YFKQZELe8Qbd&limit=10`;
     // console.log(queryURL);
-
+    
     $.ajax({
       url: queryURL,
       method: "GET"
@@ -82,8 +84,8 @@ $(document).on('click', '.animal', function() {
                     }
 
                 }
-
       }); 
+      
 
           //Create function to add new button to array
         $(document).on('click', '.add-animal', function(){
