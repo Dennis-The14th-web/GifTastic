@@ -56,23 +56,8 @@ body{
     float: right;
     height: 30px;
 }
-#search-animal-button {
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    border:2px solid #a9a9a9;
-    background: #a9a9a9;
-    margin-top: 15px;
-    float: right;
-    height: 30px;
-}
 
 #add-animal-image {
-    margin-top: -5px;
-    max-width: 30px;
-    height: 27px;
-}
-
-#add-animal-img {
     margin-top: -15px;
     max-width: 30px;
     height: 27px;
