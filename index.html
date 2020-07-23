@@ -12,36 +12,19 @@
 
 </head>
 <body>
-    <nav>
-        <nav class="nav-bar">
-           <h2>&#129409 Welcome to the Animal Kingdom, It's so <b>GifTastic.</b>&#128053;</h2> 
-        </nav>
-    </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <div id="animal-buttons">
-                
-                </div>
-            </div>
-            <div class="col-md-2"></div>
-            
-            <div class="col-md-3">                    
-                   
-                <form id="form">
-                    <label for="animal-input">Add an animal</label>
-                    <br>
-                    <input type="text" id="animal-input">
-                    <br>
-                    <button class="btn btn-success add-animal" type="button">Submit</button>
-                </form>
-                    
-            </div>
-        </div>
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">gifWORLD</a>
+        <form class="form-inline">
+          <input class="form-control" id="search-input" type="search" placeholder="add a button" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" id="add-animal-button" type="submit"><img id="add-animal-image" src="./assets/css/images/addButton.png"></button>
+        </form>
+      </nav>
+    <div class="row">
+        <div class="container col-md-3" id="animal-buttons"></div> 
+        <div class="container-flex col-md-9" id="animals">
+        <!-- <div class="flex-container" id="animals"> -->
 
-       
-        <div class="flex-container" id="animals">
-
+        <!-- </div>  -->
         </div>
         
     </div>
@@ -54,6 +37,7 @@
   		src="https://code.jquery.com/jquery-3.1.1.min.js"
   		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   		crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./assets/javascript/app.js" type="module"></script>
+    <script src="./assets/javascript/app.js" type="module"></script>
+    
 </body>
 </html>

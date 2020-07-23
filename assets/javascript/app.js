@@ -1,10 +1,11 @@
-// var queryURL = import("./keys");
+var APIKEY = '12QiWZ7afZ51SrEggGq3YFKQZELe8Qbd';
 
 
 //Create an array of Animals=Topics	
 $(document).ready(function() {
+  
 
-  var animals = ["dog", "cat", "frog", "badger", "sloth", "bat", "bee", "crocodile", "gorilla", "lion", "tiger", "monkey", "kangaroo", "geese", "dolphin", "zebra", "whale", "weasel", "swan", "squirrel"];	
+  var animals = ["dog", "goat", "michael jordan", "kobe bryant"];	
 
   //  create animal array buttons
   function renderButtons(){
@@ -13,7 +14,7 @@ $(document).ready(function() {
 
     for (var i = 0; i < animals.length; i++) {
             //create all buttons and style apperance in bootstrap class
-            var a = $('<button class= "btn btn-primary btn m-1">');
+            var a = $('<button class= "btn-success btn m-1">');
             a.addClass('animal');
             a.attr('data-name', animals[i]);
             a.text(animals[i]);
@@ -31,7 +32,11 @@ $(document).on('click', '.animal', function() {
 
    // Create an AJAX call for the specific animal button being clicked
    
-    var queryURL = `https://api.giphy.com/v1/gifs/search?q=` + animal + `&api_key=12QiWZ7afZ51SrEggGq3YFKQZELe8Qbd&limit=10`;
+    // var api = "https://api.giphy.com/v1/gifs/search?",
+    // var apiKey = "&api_key=12QiWZ7afZ51SrEggGq3YFKQZELe8Qbd",
+    // var query = "&q=animal&limit=10"
+
+    var queryURL = `https://api.giphy.com/v1/gifs/search?q=` + animal + `&api_key=${APIKEY}&limit=3`;
     // console.log(queryURL);
     
     $.ajax({
@@ -88,17 +93,20 @@ $(document).on('click', '.animal', function() {
       
 
           //Create function to add new button to array
-        $(document).on('click', '.add-animal', function(){
-            if ($('#animal-input').val().trim() == ''){
-              alert('Type in the name of an animal, and click on the SUBMIT button to see gif display');
+        $('#add-animal-button').on('click', function(){
+            if ($('#search-input').val().trim() == ''){
+              alert('Type in the name of an animal, and click on the ADD button to see gif display');
            }
            else {
-            var animalPlace = $('#animal-input').val().trim();
+            var animalPlace = $('#search-input').val().trim();
             animals.push(animalPlace);
-            $('#animal-input').val();
+            $('#search-input').val('');
             renderButtons();
            return false;
             }
 
         });
   });
+
+
+ 
