@@ -5,7 +5,7 @@ var APIKEY = '12QiWZ7afZ51SrEggGq3YFKQZELe8Qbd';
 $(document).ready(function() {
   
 
-  var animals = ["dog", "goat", "michael jordan", "kobe bryant"];	
+  var animals = ["dog", "goat", "michael jordan", "kobe bryant", "mike tyson", "will smith", "mustang"];	
 
   //  create animal array buttons
   function renderButtons(){
