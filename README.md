@@ -8,9 +8,7 @@ Giphy API and javaScript / jQuery
 
 - AJAX
 
-- JavaScript
-
-- jQuery for DOM manipulation
+- jQuery 
 
 - HTML5
 
@@ -18,11 +16,10 @@ Giphy API and javaScript / jQuery
 
 - Bootstrap4
 
-- Google Fonts
 
 ## More Info
 
-- Application layout and styling was programed with HTML5, CSS3, Bootstrap4 and Google Fonts
+- Application layout and styling was programed with HTML5, CSS3, Bootstrap4
 
 - jQuery was used to program:
 
