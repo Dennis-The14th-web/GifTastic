@@ -26,7 +26,7 @@ Giphy API and javaScript / jQuery
     * the buttons of animals array and of the user text input
     * the gif image still and animation display when clicked
 
-- The gif image display and its ratings were generated with AJAX call using a queryURL, along with a Giphy API key. The right perameters were used to GET the appropriate response when clicked
+- The gif image display and its ratings were generated with AJAX call using a queryURL, along with a Giphy API key. The right parameters were used to GET the appropriate response when clicked
 
 ## Note
 
@@ -34,6 +34,6 @@ Giphy API and javaScript / jQuery
 
 - Alert pop up response when user click Submit button on a blank text input was initiated with javaScript
 
-## App View & Live Link
+## App View: Click Me
 
 <a href="https://dennis-the14th-web.github.io/GifTastic/"><img src="assets/css/images/gifKOLLECTION.PNG" ></a>
