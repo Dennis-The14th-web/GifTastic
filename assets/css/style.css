@@ -18,16 +18,12 @@ body{
     font-size: 20px;   
 }
 
-#collection {
-    color: #000000;
-}
-
 .row {
     margin: 10px; 
 }
 
 .container-flex{
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     font-size: 15px;
     font-weight: bolder;
@@ -93,6 +89,20 @@ body{
 @keyframes spin { 100% { transform:rotateY(360deg);} }
 
 
+.footer {
+    color: #fff;
+    padding: 10px;
+}
+
+.fa {
+    color: #fff;
+}
+
+#container {
+    text-align: center;
+}
+
+
 
 
 
@@ -109,7 +119,7 @@ body{
     }
 
     #search-input {
-        width: 250px;
+        width: auto;
         font-size: 10px;
         padding: 5px;
     }
