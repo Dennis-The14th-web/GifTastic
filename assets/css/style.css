@@ -18,6 +18,11 @@ body{
     font-size: 20px;   
 }
 
+#mque {
+    color: #32cd32;
+    font-weight: bolder;
+}
+
 .row {
     margin: 10px; 
 }
